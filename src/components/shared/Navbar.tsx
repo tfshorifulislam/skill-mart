@@ -1,22 +1,25 @@
 import { Button } from "../ui/button";
+import { DropdownMenuAvatar } from "./DropDownAvatar";
 import { SearchInput } from "./SearchInput";
 
 const Navbar = () => {
     return (
         <div className="shadow-sm bg-white">
             <div className="py-3 w-11/12 mx-auto flex items-center justify-between">
+
                 <div className="flex items-center gap-6">
                     <span className="text-2xl leading-6 text-[#4f46e5] font-bold">SkillMart</span>
-                    <ul className="flex gap-6">
+                    <ul className="gap-6 hidden md:block">
                         <li className="cursor-pointer">Home</li>
                         <li className="cursor-pointer">Explore</li>
                     </ul>
                 </div>
+
                 <div className="hidden md:block">
                     <SearchInput />
                 </div>
 
-                <div className="flex gap-4 items-center">
+                <div className="gap-4 items-center hidden md:block">
                     <Button
                         variant='ghost' className='cursor-pointer leading-6 text-sm text-[#575e70]'>
                         Login
@@ -25,6 +28,9 @@ const Navbar = () => {
                         className='bg-[#4F46E5] hover:bg-[#3f2edd] cursor-pointer px-6 py-2 rounded-full text-white leading-6 text-sm'>
                         Sign Up
                     </Button>
+                </div>
+                <div className="block md:hidden">
+                    <DropdownMenuAvatar />
                 </div>
             </div>
         </div>
