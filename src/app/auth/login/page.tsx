@@ -3,13 +3,13 @@ import Image from "next/image";
 
 const LoginPage = () => {
   return (
-    <section className="h-screen grid grid-cols-1 md:grid-cols-2 max-w-7xl mx-auto">
+    <section className="min-h-screen grid grid-cols-1 md:grid-cols-2 max-w-7xl mx-auto">
       <div className="hidden md:block bg-[#3525CD] p-16 ">
         <span>
           <Image
             src={'/logo2.png'}
-            width={200}
-            height={200}
+            width={120}
+            height={150}
             alt="logo"
           />
         </span>
@@ -25,7 +25,7 @@ const LoginPage = () => {
             width={512}
             height={382}
             alt="avatar"
-            className="absolute -bottom-20" />
+            className="absolute -bottom-10" />
 
         </div>
       </div>
@@ -43,6 +43,7 @@ const LoginPage = () => {
         <InputForm />
 
       </div>
+      
     </section>
   );
 };
