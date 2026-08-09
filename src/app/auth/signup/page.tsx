@@ -45,12 +45,12 @@ const SignUpPage = () => {
 
                     {/* Copyright */}
                     <div className="relative z-10 text-sm text-white/70">
-                        © 2024 SkillMart Professional Marketplace. All rights reserved.
+                        © 2026 SkillMart Professional Marketplace. All rights reserved.
                     </div>
                 </section>
 
                 {/* Right Side */}
-                <div className="flex flex-col items-center justify-center px-24">
+                <div className="flex flex-col items-center justify-center w-11/12 mx-auto md:w-fit md:px-24">
                     <div>
                         <h1 className="font-semibold text-3xl leading-10 text-[#191c1d] mb-2">
                             Create your account
