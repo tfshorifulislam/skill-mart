@@ -1,5 +1,6 @@
 "use client";
 
+import { InputFieldgroup } from "@/components/shared/SignupForm";
 import Image from "next/image";
 
 const SignUpPage = () => {
@@ -49,9 +50,20 @@ const SignUpPage = () => {
                 </section>
 
                 {/* Right Side */}
+                <div className="flex flex-col items-center justify-center px-24">
+                    <div>
+                        <h1 className="font-semibold text-3xl leading-10 text-[#191c1d] mb-2">
+                            Create your account
+                        </h1>
+                        <p className="text-sm leading-6 text-[#464555] mb-6">
+                            Join thousands of learners growing their skills with
+                            SkillMart.
+                        </p>
+                    </div>
 
+                    <InputFieldgroup />
 
-
+                </div>
             </div>
         </main>
     );
