@@ -64,6 +64,8 @@ const SignUpPage = () => {
                     <InputFieldgroup />
 
                 </div>
+
+                
             </div>
         </main>
     );
