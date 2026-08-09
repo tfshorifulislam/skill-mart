@@ -1,10 +1,5 @@
+import SkillMartLandingPage from "@/components/shared/SkillMartLandingPage";
 
-const HomePage = () => {
-  return (
-    <div>
-      
-    </div>
-  );
-};
-
-export default HomePage;
+export default function Home() {
+  return <SkillMartLandingPage />;
+}
